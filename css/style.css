@@ -1,0 +1,327 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; 
+}
+
+html {	height: 100%; }
+
+body {
+	font: 100%/1.5em Arial, Helvetica, sans-serif;
+	color: #000;
+	height: 100%;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	background: #fff;
+}
+
+.container .cols {
+	float: left;
+	margin: 0 0 0.001em;
+	background: #fff;
+}
+
+.container .cols.col-1 { width: 12.5%; }
+.container .cols.col-2 { width: 25%; }
+.container .cols.col-3 { width: 37.5%; }
+.container .cols.col-4 { width: 50%; }
+.container .cols.col-5 { width: 62.5%; }
+.container .cols.col-6 { width: 75%; }
+.container .cols.col-7 { width: 87.5%; }
+.container .cols.col-8 { width: 100%; }
+
+.container:before,
+.container:after,
+.row:before,
+.row:after,
+.clear:before,
+.clear:after {
+	content: " ";
+	display: table;
+}
+.container:after,
+.row:after,
+.clear:after {
+	clear: both;
+}
+
+.logo {
+	width: 60px;
+	height: 60px;
+	background: #009999;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	-moz-box-shadow: 3px 3px 7px rgba(0,0,0,0.35);
+	-webkit-box-shadow: 3px 3px 7px rgba(0,0,0,0.35);
+	box-shadow: 3px 3px 7px rgba(0,0,0,0.35);
+	font-size: 2.25em;
+	font-family: "SegoeUILight", sans-serif; 
+	margin-top: 30px;
+	margin-left: 52%;
+	padding-top: 17px;
+	padding-left: 6px;
+	letter-spacing: 2px;
+}
+
+.logo span { color: #fff; }
+
+.logo a {
+	text-decoration: none;
+	color: #000;
+}
+
+.logo:hover {	box-shadow: none; }
+
+.lang {
+		margin-left: 31%;
+		font-family: "SegoeUILight", sans-serif; 
+		font-size: 14px;
+}
+
+.lang ul li {
+	list-style-type: none;
+	float: left;
+}
+.lang li a.active { border-bottom: 3px solid #009999; }
+
+.lang li:first-child { margin-right: 5px; }
+
+.lang a {
+	text-decoration: none;
+	color: #000;
+}
+
+.lang a:hover {	color: #009999;	}
+
+/* about-us */
+
+.about-us {
+	margin-top: 170px;
+}
+
+.about-us h1 { 
+	width: 60%;
+	font-family: "SegoeUILight", sans-serif;
+	font-size: 3em;
+	line-height: 50px;
+	margin-bottom: 30px;
+	letter-spacing: 1px;
+	margin-left: 17%;
+ }
+
+.about-us p { 
+	width: 63%; 
+	font-size: 1.5em;
+	font-family: "SegoeUILight", sans-serif;
+	margin-bottom: 20px;
+	letter-spacing: 1px;
+	margin-left: 17%;
+}
+
+.img {
+	margin-left: -10%;
+}
+
+/* select-site */
+
+.select-site { margin-top: 380px; }
+
+.select-site h2, .portfolio h2, .contact h2 {
+	font-size: 2.25em;
+	font-family: "SegoeUILight", sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: center;
+	margin-bottom: 140px;
+}
+
+.site-type-icon {
+	margin-left: 23%;
+	margin-bottom: 50px;
+	background: #13818D;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	border: none;
+	-moz-box-shadow: 3px 3px 7px rgba(0,0,0,0.35);
+	-webkit-box-shadow: 3px 3px 7px rgba(0,0,0,0.35);
+	box-shadow: 3px 3px 7px rgba(0,0,0,0.35);
+}
+
+.site-type-icon:hover {
+	box-shadow: none;
+	border: none;
+}
+
+.site-type-name {
+	text-align: center;
+	font-family: "SegoeUIRegular", sans-serif;
+	font-size: 18px;
+	margin-bottom: 415px;
+}
+
+.site-type-name a {
+	text-decoration: none;
+	color: #000;
+}
+
+.site-type-name a:hover {
+	color: #009999;
+}
+
+/* portfolio */
+
+.portfolio h2 {
+	margin-bottom: 90px;
+}
+
+ .col-1.work {
+	width: 100%;
+	height: 190px;
+	background-color: #ccc;
+	overflow: hidden;
+	position: relative;
+}
+
+ .col-1.work img {
+	width: 100%;
+ }
+
+.img-hover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #009999;
+	opacity: 0;
+	transition: all .25s;
+	text-align: center;
+	color: #fff;
+	font-family: "SegoeUIRegular";
+	font-size: 1em;
+}
+
+.img-hover h3 {
+	font-weight: normal;
+	padding-top: 12%;
+}
+
+.img-hover p {
+	font-family: "SegoeUILight", sans-serif;
+	padding-top: 5%;
+}
+
+.img-hover button {
+	width: 146px;
+	height: 28px;
+	margin-top: 8%;
+	background-color: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+	font-family: "SegoeUIRegular";
+	font-size: 1em;
+	padding-bottom: 1px; 
+}
+
+.img-hover button:hover {
+	cursor: pointer;
+}
+
+ .img-hover:hover {
+ 	opacity: 0.9;
+}
+
+
+
+/* contact */
+
+.contact {
+	margin-top: 430px;
+}
+
+.contact h2 {
+	margin-bottom: 60px;
+}
+
+.contact-form {
+	width: 71%;
+	margin-left: 15%;
+}
+
+.contact-form label {
+	float: left;
+	clear: both;
+	font-family: "SegoeUIRegular", sans-serif;
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+.contact-form input[type="text"], .contact-form input[type="email"] {
+	width: 100%;
+	height: 45px;
+	float: left;
+	border: 1px solid #ccc;
+	font-family: "SegoeUIRegular", sans-serif;
+	font-size: 18px;
+	padding-left: 10px;
+	margin-bottom: 40px;
+}
+
+.contact-form textarea {
+	width: 100%;
+	height: 135px;
+	margin-bottom: 45px;
+	border: 1px solid #ccc;
+	font-family: "SegoeUIRegular", sans-serif;
+	font-size: 18px;
+	padding-left: 10px;
+	padding-top: 10px;
+	resize: none;
+}
+
+.contact-form button {
+	background-color: #009999;
+	border: none;
+	width: 60%;
+	height: 45px;
+	font-family: "SegoeUIRegular", sans-serif;
+	font-size: 24px;
+	color: #fff;
+	-moz-box-shadow: 3px 3px 7px rgba(0,0,0,0.35);
+	-webkit-box-shadow: 3px 3px 7px rgba(0,0,0,0.35);
+	box-shadow: 3px 3px 7px rgba(0,0,0,0.35);
+	margin-left: 19%;
+}
+
+.contact-form button:hover {
+	box-shadow: none;
+}
+
+/* footer */
+
+footer {
+	margin-top: 195px;
+	margin-bottom: 25px;
+	text-align: center;
+	font-size: 16px;
+	font-family: "SegoeUIRegular", sans-serif;
+}
+
+#page-wrap:after {
+	content: "";
+	display: block;
+}
+
+footer, #page-wrap:after { height: 10px; }
+
+#page-wrap {
+	min-height: 97%;
+	margin-bottom: -10px;
+}
