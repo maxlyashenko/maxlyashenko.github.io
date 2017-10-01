@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Neucha');
+
+.btn-add-note {
+    display: block;
+}
+
+textarea {
+    background-image: url('note-bg.png');
+    background-position-x: -75px;
+    background-position-y: -25px;
+    background-repeat: no-repeat;
+    border: none;
+    padding: 10px 10px;
+    font-family: 'Neucha';
+    font-size: 22px;
+    position: relative;
+}
+
+#delete-note {
+    position: absolute;
+    top: 40px;
+    left: 260px;
+    display: none;
+    cursor: pointer;
+}
