@@ -8,17 +8,17 @@ var note = [
     {
         id: 1,
         text: "sxsxsxsxs",
-        date: "01.10.2017 22:40"
+        date: "01.10.2017"
     },
     {
         id: 2,
         text: "scscs",
-        date: "01.10.2017 22:45"
+        date: "01.10.2017"
     },    
     {
         id: 3,
         text: "dvvbdvd",
-        date: "01.10.2017 22:50"
+        date: "01.10.2017"
     }
 ];
 
@@ -31,18 +31,31 @@ for (var i = 0; i < note.length; i++) {
 
 
 $(document).ready(function() {
-    $("textarea").hover(function(){
+    $(".notes").hover(function(){
         $("#delete-note").css("display", "block");
         }, function(){
         $("#delete-note").css("display", "none");
     });
 
-    $(".btn-add-note").click(function(){
+    $(".add-note").click(function(){
+        var val = $("#text").val();
+        var date = $("#datepicker").val();
+        console.log(val);
+        console.log(date);
         $(".notes").append(`
             <div class="note">
-                <textarea name="" id="" cols="30" rows="8"></textarea>
+                <textarea class="text-note" name="" id="" cols="30" rows="8"></textarea>
                 <span id="delete-note">X</span>
             </div`
         );
+        $(".text-note").val(val + "\n" + date);
+        $("#text").val("");
+        $(".window-add-note").css("display", "none");
+
+    });
+
+    $(".btn-add-note").click(function(){
+        $(".window-add-note").css("display", "inline-block");
     })
 });
+
